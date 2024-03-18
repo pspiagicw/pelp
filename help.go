@@ -7,6 +7,9 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
+func Version(name string, version string) {
+	fmt.Printf("%s version: '%s'\n", name, version)
+}
 func HeaderWithDescription(header string, description []string) {
 	fmt.Println(strings.ToUpper(header))
 	for _, desc := range description {
